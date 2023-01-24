@@ -1,5 +1,5 @@
 //Unbounded Knapsack Problem
-
+//We can take an item n number of times
 class Knapsack2{
     public int getMaxProfit(int[] wt,int[] pr,int totalCapacity){
         if(wt.length==0 || pr.length==0 ||totalCapacity<=0){
@@ -45,3 +45,11 @@ public class DP15{
 
     }
 }
+
+/*
+                if(i>0){
+                    excludingProfit=arr[i-1][j];
+                }
+
+The above syntax means if the iterator is at i we are excluding the earlier item so[i-1] (the row above)
+ */
